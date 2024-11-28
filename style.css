@@ -1,0 +1,383 @@
+/* General Reset and Styling */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+}
+
+/* Body Styling */
+
+body {
+
+    background: linear-gradient(135deg, #000000, #003366);
+
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+/* Header Styling */
+
+header {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #111;
+
+}
+
+header .logo h1 {
+
+    font-size: 32px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+/* Navigation Styling */
+
+nav {
+
+    text-align: center;
+
+    background-color: #003366;
+
+    padding: 10px 0;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+nav ul li {
+
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+
+}
+
+/* Sign Up and Login Buttons Styling */
+
+.signup-button, .login-button {
+
+    padding: 15px 30px;
+
+    font-size: 18px;
+
+    background-color: #003366;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    display: inline-block;
+
+}
+
+.signup-button:hover, .login-button:hover {
+
+    background-color: #004c99;
+
+}
+
+/* Hero Section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+.hero h2 {
+
+    font-size: 36px;
+
+}
+
+.hero p {
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+/* Buttons in Hero Section */
+
+.login-button, .apply-loan-button {
+
+    padding: 15px 30px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    background-color: #003366;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    display: block;
+
+    margin: 20px auto;
+
+    max-width: 300px;
+
+    text-align: center;
+
+}
+
+.login-button:hover, .apply-loan-button:hover {
+
+    background-color: #004c99;
+
+}
+
+/* Image Styling */
+
+.image-container {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+.centered {
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+}
+
+/* Urgent Message Styling */
+
+.urgent-message {
+
+    margin: 40px 20px;
+
+}
+
+.urgent-message hr {
+
+    border: 0;
+
+    border-top: 2px solid white;
+
+    margin: 20px 0;
+
+}
+
+.urgent-message strong {
+
+    font-size: 22px;
+
+    color: #ffcc00;
+
+}
+
+.urgent-message p {
+
+    font-size: 18px;
+
+    margin-top: 10px;
+
+}
+
+/* About Us Section */
+
+.about {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+}
+
+.about h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+.about-message {
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+}
+
+/* Contact Us Section */
+
+.contact {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background-color: #111;
+
+}
+
+.contact h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+.contact p {
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+/* WhatsApp Button Styling */
+
+.whatsapp-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+}
+
+.whatsapp-button {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin-bottom: 10px;
+
+}
+
+.whatsapp-icon {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+.whatsapp-link {
+
+    color: white;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+}
+
+.whatsapp-link:hover {
+
+    text-decoration: underline;
+
+}
+
+/* Subheading Styling */
+
+h3.centered {
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin: 20px 0;
+
+}
+
+/* Body Text Below Subheading */
+
+.body-text {
+
+    padding: 20px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+}
+
+/* Final Heading Styling */
+
+h3.centered span {
+
+    color: red;
+
+}
+
+/* Footer Styling */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #111;
+
+    color: white;
+
+    margin-top: 20px;
+
+}
