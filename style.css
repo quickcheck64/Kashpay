@@ -30,19 +30,23 @@ header {
 
     background-color: #005b8e; /* Maintain the original color */
 
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding to make it more compact */
 
     color: white;
 
     text-align: center;
 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+
 }
 
 header h1 {
 
-    font-size: 36px;
+    font-size: 28px; /* Reduced font size to make it more balanced */
 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+
+    margin: 0; /* Removed margin to save space */
 
 }
 
@@ -50,7 +54,7 @@ header h1 {
 
 nav {
 
-    background-color: #2C3E50; /* Updated to a dark blue-gray color */
+    background-color: #2C3E50; /* Dark blue-gray */
 
     color: white;
 
@@ -64,13 +68,13 @@ nav {
 
     justify-content: space-between;
 
-    align-items: flex-start;
+    align-items: center; /* Adjusted alignment to center items */
 
-    max-width: 1200px; /* Set a max width for the container */
+    max-width: 1200px;
 
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
 
-    padding: 0 20px; /* Add padding on the left and right to bring columns closer to the center */
+    padding: 0 20px;
 
 }
 
@@ -78,7 +82,7 @@ nav {
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row; /* Changed to row for a more compact navigation */
 
 }
 
@@ -88,11 +92,13 @@ nav {
 
     padding: 0;
 
+    margin: 0;
+
 }
 
 .nav-left li, .nav-right li {
 
-    margin: 10px 0;
+    margin: 0 15px; /* Reduced margin between links */
 
 }
 
@@ -102,7 +108,7 @@ nav {
 
     color: white;
 
-    font-size: 18px;
+    font-size: 16px; /* Adjusted font size for better balance */
 
     transition: color 0.3s ease;
 
