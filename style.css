@@ -1,4 +1,4 @@
-/* General Reset and Styling */
+/* Global Styles */
 
 * {
 
@@ -8,43 +8,29 @@
 
     box-sizing: border-box;
 
-    font-family: Arial, sans-serif;
-
 }
-
-/* Body Styling */
 
 body {
 
-    background: linear-gradient(135deg, #000000, #003366);
-
-    color: white;
-
-    font-size: 16px;
+    font-family: 'Arial', sans-serif;
 
     line-height: 1.6;
 
+    background-color: #f4f4f4;
+
+    color: #333;
+
+    padding: 0 20px; /* Add some padding to the sides of the body */
+
 }
 
-/* Header Styling */
+/* Header Styles */
 
 header {
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
+    background-color: #005b8e; /* Maintain the original color */
 
     padding: 20px;
-
-    background-color: #111;
-
-}
-
-header .logo h1 {
-
-    font-size: 32px;
 
     color: white;
 
@@ -52,35 +38,65 @@ header .logo h1 {
 
 }
 
-/* Navigation Styling */
+header h1 {
+
+    font-size: 36px;
+
+    letter-spacing: 2px;
+
+}
+
+/* Navigation Styles */
 
 nav {
 
-    text-align: center;
+    background-color: #2C3E50; /* Updated to a dark blue-gray color */
 
-    background-color: #003366;
+    color: white;
 
     padding: 10px 0;
 
 }
 
-nav ul {
-
-    list-style: none;
+.nav-container {
 
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    max-width: 1200px; /* Set a max width for the container */
+
+    margin: 0 auto; /* Center the container */
+
+    padding: 0 20px; /* Add padding on the left and right to bring columns closer to the center */
 
 }
 
-nav ul li {
+.nav-left, .nav-right {
 
-    margin-left: 20px;
+    display: flex;
+
+    flex-direction: column;
 
 }
 
-nav ul li a {
+.nav-left ul, .nav-right ul {
+
+    list-style-type: none;
+
+    padding: 0;
+
+}
+
+.nav-left li, .nav-right li {
+
+    margin: 10px 0;
+
+}
+
+.nav-left a, .nav-right a {
 
     text-decoration: none;
 
@@ -88,135 +104,125 @@ nav ul li a {
 
     font-size: 18px;
 
+    transition: color 0.3s ease;
+
 }
 
-/* Sign Up and Login Buttons Styling */
+.nav-left a:hover, .nav-right a:hover {
 
-.signup-button, .login-button {
+    color: #005b8e; /* Highlight the links on hover */
 
-    padding: 15px 30px;
+}
 
-    font-size: 18px;
+.signup-button, .login-button, .apply-loan-button {
 
-    background-color: #003366;
+    background-color: #005b8e; /* Same color for both buttons */
 
-    color: white;
-
-    text-decoration: none;
+    padding: 10px 20px;
 
     border-radius: 5px;
 
+    color: white;
+
+    text-decoration: none;
+
     display: inline-block;
 
-}
+    margin-top: 10px;
 
-.signup-button:hover, .login-button:hover {
-
-    background-color: #004c99;
+    transition: background-color 0.3s ease;
 
 }
 
-/* Hero Section */
+.signup-button:hover, .login-button:hover, .apply-loan-button:hover {
+
+    background-color: #003b5c; /* Darker shade on hover */
+
+}
+
+/* Hero Section Styles */
 
 .hero {
 
+    background-color: #ffffff;
+
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 50px 20px;
+
+    max-width: 1200px; /* Added max width for consistency */
+
+    margin: 0 auto;
 
 }
 
 .hero h2 {
 
-    font-size: 36px;
-
-}
-
-.hero p {
-
-    font-size: 18px;
+    font-size: 40px;
 
     margin-bottom: 20px;
 
 }
 
-/* Buttons in Hero Section */
-
-.login-button, .apply-loan-button {
-
-    padding: 15px 30px;
+.hero p {
 
     font-size: 20px;
 
-    font-weight: bold;
+    margin-bottom: 30px;
 
-    background-color: #003366;
+}
 
-    color: white;
+.hero .login-button,
+
+.hero .apply-loan-button {
+
+    margin: 10px;
 
     text-decoration: none;
 
-    border-radius: 5px;
-
-    display: block;
-
-    margin: 20px auto;
-
-    max-width: 300px;
-
-    text-align: center;
+    font-size: 18px;
 
 }
 
-.login-button:hover, .apply-loan-button:hover {
+.hero .image-container img {
 
-    background-color: #004c99;
+    width: 100%;
 
-}
+    height: auto;
 
-/* Image Styling */
+    max-width: 900px;
 
-.image-container {
-
-    text-align: center;
-
-    margin-top: 20px;
+    margin: 30px auto;
 
 }
 
 .centered {
 
-    max-width: 100%;
-
-    height: auto;
-
-    border-radius: 10px;
+    text-align: center;
 
 }
 
-/* Urgent Message Styling */
+/* Urgent Message Section */
 
 .urgent-message {
 
-    margin: 40px 20px;
+    background-color: #f9f9f9;
 
-}
+    padding: 30px;
 
-.urgent-message hr {
+    margin: 30px 0;
 
-    border: 0;
-
-    border-top: 2px solid white;
-
-    margin: 20px 0;
+    text-align: center;
 
 }
 
 .urgent-message strong {
 
-    font-size: 22px;
+    font-size: 20px;
 
-    color: #ffcc00;
+    display: block;
+
+    margin-bottom: 10px;
 
 }
 
@@ -224,7 +230,7 @@ nav ul li a {
 
     font-size: 18px;
 
-    margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -232,15 +238,21 @@ nav ul li a {
 
 .about {
 
+    background-color: #ffffff;
+
     padding: 50px 20px;
 
     text-align: center;
+
+    max-width: 1200px; /* Added max width for consistency */
+
+    margin: 0 auto;
 
 }
 
 .about h3 {
 
-    font-size: 32px;
+    font-size: 30px;
 
     margin-bottom: 20px;
 
@@ -250,7 +262,11 @@ nav ul li a {
 
     font-size: 18px;
 
-    margin-top: 20px;
+    line-height: 1.6;
+
+    max-width: 1000px; /* Limit text width */
+
+    margin: 0 auto;
 
 }
 
@@ -258,39 +274,27 @@ nav ul li a {
 
 .contact {
 
+    background-color: #f4f4f4;
+
     padding: 50px 20px;
 
     text-align: center;
 
-    background-color: #111;
+    max-width: 1200px; /* Added max width for consistency */
+
+    margin: 0 auto;
 
 }
 
 .contact h3 {
 
-    font-size: 32px;
+    font-size: 30px;
 
     margin-bottom: 20px;
 
 }
-
-.contact p {
-
-    font-size: 18px;
-
-    margin-bottom: 20px;
-
-}
-
-/* WhatsApp Button Styling */
 
 .whatsapp-container {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
 
     margin-top: 20px;
 
@@ -298,86 +302,98 @@ nav ul li a {
 
 .whatsapp-button {
 
-    width: 80px;
-
-    height: 80px;
-
-    margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 
 .whatsapp-icon {
 
-    width: 100%;
+    width: 50px;
 
-    height: 100%;
+    height: 50px;
 
 }
 
 .whatsapp-link {
 
-    color: white;
+    display: inline-block;
 
-    font-size: 16px;
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    color: #25D366;
 
     text-decoration: none;
 
 }
 
-.whatsapp-link:hover {
+/* Image Section */
 
-    text-decoration: underline;
+.image-container {
 
-}
+    max-width: 1000px;
 
-/* Subheading Styling */
-
-h3.centered {
+    margin: 30px auto;
 
     text-align: center;
 
-    font-size: 24px;
+}
 
-    font-weight: bold;
+.image-container img {
 
-    margin: 20px 0;
+    width: 100%;
+
+    height: auto;
 
 }
 
-/* Body Text Below Subheading */
+/* Text Body Section */
 
 .body-text {
 
-    padding: 20px;
-
     font-size: 18px;
 
-    line-height: 1.8;
+    line-height: 1.6;
 
-    text-align: justify;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    margin-bottom: 30px;
 
 }
 
-/* Final Heading Styling */
+/* Final Heading Section */
 
-h3.centered span {
+.centered h3 {
+
+    font-size: 30px;
 
     color: red;
 
+    margin-top: 40px;
+
 }
 
-/* Footer Styling */
+/* Footer Section */
 
 footer {
 
-    text-align: center;
-
-    padding: 20px;
-
-    background-color: #111;
+    background-color: #333;
 
     color: white;
 
-    margin-top: 20px;
+    text-align: center;
+
+    padding: 10px;
+
+    margin-top: 40px;
+
+}
+
+footer p {
+
+    font-size: 16px;
 
 }

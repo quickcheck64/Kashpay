@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Add event listener to WhatsApp link
+    // Add event listener to WhatsApp link without alert
 
     const whatsappLink = document.querySelector('.whatsapp-link');
 
@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         whatsappLink.addEventListener('click', () => {
 
-            alert('You are being redirected to WhatsApp. Make sure to have WhatsApp installed.');
+            // Directly redirect to WhatsApp without alert
+
+            window.location.href = whatsappLink.href;
 
         });
 
