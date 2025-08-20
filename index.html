@@ -1,223 +1,463 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>KASHPAY</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Kashpay Finance - Loan Services</title>
-
-  <link rel="stylesheet" href="styles.css">
-
+  <title>Kashpay Finance - Professional Loan Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-<!-- Header Section -->
-
-<header class="header">
-
-  <div class="logo">
-
-    <h1>Kashpay Finance</h1>
-
-  </div>
-
-</header>
-
-<!-- Navigation Menu -->
-
-<nav class="nav">
-
-  <div class="nav-container">
-
-    <!-- Left Column (About Us + Sign Up) -->
-
-    <div class="nav-left">
-
-      <ul>
-
-        <li><a href="#about">About Us</a></li>
-
-        <li><a href="https://mifundlendme.vercel.app/register" class="signup-button">Sign Up</a></li>
-
-      </ul>
-
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-coins"></i>
+        <h1>Kashpay Finance</h1>
+      </div>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://mifundlendme.vercel.app/login?session=expired" class="btn-secondary">Login</a></li>
+          <li><a href="https://mifundlendme.vercel.app/register" class="btn-primary">Sign Up</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+  </header>
 
-    
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://mifundlendme.vercel.app/login?session=expired">Login</a></li>
+      <li><a href="https://mifundlendme.vercel.app/register">Sign Up</a></li>
+    </ul>
+  </nav>
 
-    <!-- Right Column (Contact Us + Login) -->
-
-    <div class="nav-right">
-
-      <ul>
-
-        <li><a href="#contact">Contact Us</a></li>
-
-        <li><a href="https://mifundlendme.vercel.app/login?session=expired" class="login-button">Login</a></li>
-
-      </ul>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Welcome to Kashpay Finance</h2>
+          <p>Your trusted partner for comprehensive financial solutions. We provide fast, easy, and flexible loans with competitive rates, exceptional service, and a commitment to your financial success. Whether you need personal loans, business funding, or emergency cash, we're here to help you achieve your goals.</p>
+          <div class="hero-buttons">
+            <a href="https://mifundlendme.vercel.app/register" class="btn-primary btn-large">
+              <i class="fas fa-rocket"></i>
+              Apply for Loan Now
+            </a>
+            <a href="https://mifundlendme.vercel.app/login?session=expired" class="btn-outline btn-large">
+              <i class="fas fa-sign-in-alt"></i>
+              Login to Your Account
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://resource.lendingpoint.com/wp-content/uploads/2024/07/personal-loans-lendingpoint.jpg" alt="Professional Financial Services" />
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-
-</nav>
-
-<!-- Hero Section -->
-
-<section class="hero">
-
-  <div class="hero-text">
-
-    <h2>Welcome to Kashpay Finance</h2>
-
-    <p>Your trusted partner for financial solutions. Get fast, easy, and flexible loans with Kashpay Finance.</p>
-
-    <div class="hero-buttons">
-
-      <a href="https://mifundlendme.vercel.app/register" class="apply-loan-button">Apply for Loan</a>
-
-      <a href="https://mifundlendme.vercel.app/login?session=expired" class="login-button">Login</a>
-
+  <!-- Urgent Message Section -->
+  <section class="urgent-message">
+    <div class="container">
+      <div class="urgent-content">
+        <div class="urgent-icon">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="urgent-text">
+          <h3>Need Cash Urgently?</h3>
+          <p><strong>Do you have an urgent need for cash for your business, to settle bills, take care of emergencies or grab an opportunity?</strong></p>
+          <p>Does payday seem so far and bills are piling up? Don't worry! Our convenient, secure and instant loans have got you covered. We give loans to businesses and individual entrepreneurs at a small interest rate of 5% per month with flexible repayment terms that work with your cash flow.</p>
+          <div class="highlight-box">
+            <i class="fas fa-clock"></i>
+            <strong>Apply for a loan now and get the funds within 30 minutes!</strong>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- Added comprehensive loan services section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h3>Our Loan Services</h3>
+        <p>Comprehensive financial solutions tailored to meet your unique needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h4>Personal Loans</h4>
+          <p>Quick personal loans for any purpose - medical bills, education, home improvements, or unexpected expenses. Get up to ₦5,000,000 with flexible repayment terms from 3 to 36 months.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Loan amounts: ₦50,000 - ₦5,000,000</li>
+            <li><i class="fas fa-check"></i> Interest rate: 5% per month</li>
+            <li><i class="fas fa-check"></i> Repayment: 3-36 months</li>
+            <li><i class="fas fa-check"></i> No collateral required</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h4>Business Loans</h4>
+          <p>Fuel your business growth with our business loans. Whether you're starting a new venture, expanding operations, or managing cash flow, we provide the capital you need to succeed.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Loan amounts: ₦100,000 - ₦20,000,000</li>
+            <li><i class="fas fa-check"></i> Interest rate: 5% per month</li>
+            <li><i class="fas fa-check"></i> Repayment: 6-60 months</li>
+            <li><i class="fas fa-check"></i> Working capital solutions</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+          <h4>Emergency Funds</h4>
+          <p>Life's unexpected moments require immediate financial support. Our emergency loans provide instant access to funds when you need them most, with same-day approval and disbursement.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Loan amounts: ₦20,000 - ₦2,000,000</li>
+            <li><i class="fas fa-check"></i> Interest rate: 5% per month</li>
+            <li><i class="fas fa-check"></i> Instant approval</li>
+            <li><i class="fas fa-check"></i> 24/7 application process</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="image-container">
+  <!-- Added loan requirements and process section -->
+  <section class="loan-process">
+    <div class="container">
+      <div class="section-header">
+        <h3>Simple Loan Application Process</h3>
+        <p>Get your loan in 4 easy steps</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4>Apply Online</h4>
+          <p>Fill out our simple online application form with your basic information and loan requirements.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4>Document Verification</h4>
+          <p>Upload required documents: Valid ID, Bank statements, Proof of income, and Utility bills.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4>Instant Approval</h4>
+          <p>Our advanced system reviews your application and provides instant approval within minutes.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h4>Receive Funds</h4>
+          <p>Once approved, funds are transferred directly to your bank account within 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <img src="https://resource.lendingpoint.com/wp-content/uploads/2024/07/personal-loans-lendingpoint.jpg" alt="Hero Image" class="centered">
+  <!-- Added loan requirements section -->
+  <section class="requirements">
+    <div class="container">
+      <div class="requirements-content">
+        <div class="requirements-text">
+          <h3>Loan Requirements</h3>
+          <p>We've made our loan requirements simple and accessible to ensure more people can access the financial support they need.</p>
+          <div class="requirements-list">
+            <div class="requirement-item">
+              <i class="fas fa-id-card"></i>
+              <div>
+                <h5>Valid Identification</h5>
+                <p>National ID, Driver's License, or International Passport</p>
+              </div>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-birthday-cake"></i>
+              <div>
+                <h5>Age Requirement</h5>
+                <p>Must be between 18 and 65 years old</p>
+              </div>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-bank"></i>
+              <div>
+                <h5>Bank Account</h5>
+                <p>Active Nigerian bank account for at least 3 months</p>
+              </div>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div>
+                <h5>Proof of Income</h5>
+                <p>Salary slip, business income, or other verifiable income source</p>
+              </div>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h5>Contact Information</h5>
+                <p>Valid phone number and residential address</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="requirements-image">
+          <img src="/placeholder.svg?height=400&width=500" alt="Document Requirements" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h3>Why Choose Kashpay Finance?</h3>
+        <p>Experience the difference with our customer-focused approach</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-percentage"></i>
+          </div>
+          <h4>Competitive Interest Rates</h4>
+          <p>Industry-leading rates starting at just 5% per month with no hidden fees or charges</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h4>Lightning Fast Approval</h4>
+          <p>Advanced AI-powered system provides instant decisions and funds within 30 minutes</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4>Bank-Level Security</h4>
+          <p>256-bit SSL encryption and advanced fraud protection for all transactions</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Trusted by Thousands</h4>
+          <p>Over 5,000 satisfied customers and 6+ years of reliable service</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h4>Flexible Repayment</h4>
+          <p>Choose repayment terms that fit your budget and cash flow needs</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h4>24/7 Customer Support</h4>
+          <p>Round-the-clock support via WhatsApp, phone, and email</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h3>About Kashpay Finance</h3>
+          <div class="tagline">Get loan, invest smart.</div>
+          <p>Since 2019, Kashpay Finance has been at the forefront of Nigeria's financial technology revolution. We have served thousands of customers, providing world-class financial services that combine cutting-edge technology with personalized customer care.</p>
+          <p>Our mission is simple: to democratize access to financial services and build systems that make life better for everyone. We believe that everyone deserves access to fair, transparent, and affordable financial products that help them achieve their dreams and overcome challenges.</p>
+          <p>As a licensed and regulated financial institution, we operate with the highest standards of integrity, transparency, and customer protection. Our team of financial experts and technology professionals work tirelessly to ensure that every customer receives the best possible service and support.</p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">5000+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">6+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">5%</div>
+              <div class="stat-label">Monthly Interest</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">₦50B+</div>
+              <div class="stat-label">Loans Disbursed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Urgent Message Section -->
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="testimonial-content">
+        <img src="https://res.cloudinary.com/creditville-ng/image/upload/v1663051737/medium_Screen_Shot_2022_07_08_at_3_05_49_PM_70d2b3a6c9_f1850fbf29.png" alt="Customer Success Story" />
+        <div class="testimonial-text">
+          <h3>Company with the Lowest Loan Interest Rate in Nigeria</h3>
+          <p>The lending space is fast rising and gradually becoming saturated, which might pose difficulty of choice amongst consumers. Nevertheless, there are several ways of filtering the list to decide which one is best.</p>
+          <p>Before choosing a loan company, there are general evaluation indicators to be considered including - Interest rate, loan tenor, turnaround time, customer service, and transparency. Though, the interest rate is the major factor determinant for customers.</p>
+          <p>However, on the long list of lending institutions, Kashpay stands out as the company with the lowest interest rate. Not only do they offer the lowest interest to new customers, but provisions are also made to ensure existing customers enjoy reviewed rate subsequently.</p>
+          <p>This company's interest rate has been reviewed twice in one year, which is quite impressive and unusual- they've outrightly shown their devotion to solving customers dilemma on lending services.</p>
+          <p><strong>What sets Kashpay apart is not just our competitive rates, but our commitment to transparency, customer education, and financial empowerment. We don't just provide loans; we build lasting relationships that help our customers achieve long-term financial success.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="urgent-message">
+  <!-- Added FAQ section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h3>Frequently Asked Questions</h3>
+        <p>Get answers to common questions about our loan services</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h5>How quickly can I get my loan approved?</h5>
+          <p>Our advanced system provides instant approval within minutes of application submission. Once approved, funds are transferred to your account within 30 minutes during business hours.</p>
+        </div>
+        <div class="faq-item">
+          <h5>What is the maximum loan amount I can get?</h5>
+          <p>Loan amounts vary by type: Personal loans up to ₦5,000,000, Business loans up to ₦20,000,000, and Emergency funds up to ₦2,000,000. Your eligibility depends on your income and credit profile.</p>
+        </div>
+        <div class="faq-item">
+          <h5>Do I need collateral for a loan?</h5>
+          <p>Most of our personal and emergency loans are unsecured, meaning no collateral is required. For larger business loans, we may require some form of security depending on the amount and terms.</p>
+        </div>
+        <div class="faq-item">
+          <h5>How is the interest calculated?</h5>
+          <p>Our interest rate is 5% per month on the outstanding balance. We use a reducing balance method, which means you pay interest only on the remaining loan amount as you make repayments.</p>
+        </div>
+        <div class="faq-item">
+          <h5>Can I repay my loan early?</h5>
+          <p>Yes! You can repay your loan early without any penalties. Early repayment can help you save on interest charges and improve your credit profile with us.</p>
+        </div>
+        <div class="faq-item">
+          <h5>What happens if I miss a payment?</h5>
+          <p>We understand that financial situations can change. If you anticipate difficulty making a payment, contact us immediately. We offer flexible repayment options and will work with you to find a solution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <hr>
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Ready to get started? Our dedicated customer service team is available 24/7 to assist you with your loan application, answer questions, and provide ongoing support throughout your loan journey.</p>
+          <div class="contact-features">
+            <div class="contact-feature">
+              <i class="fas fa-clock"></i>
+              <span>24/7 Support Available</span>
+            </div>
+            <div class="contact-feature">
+              <i class="fas fa-comments"></i>
+              <span>Instant WhatsApp Response</span>
+            </div>
+            <div class="contact-feature">
+              <i class="fas fa-user-tie"></i>
+              <span>Professional Loan Advisors</span>
+            </div>
+            <div class="contact-feature">
+              <i class="fas fa-shield-check"></i>
+              <span>Secure Communication</span>
+            </div>
+          </div>
+        </div>
+        <div class="whatsapp-section">
+          <div class="whatsapp-card">
+            <div class="whatsapp-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h4>Chat with us on WhatsApp</h4>
+            <p>Get instant support, loan guidance, and quick responses from our expert team</p>
+            <a href="https://wa.me/+2347078184063" class="whatsapp-button" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              Start Chat Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <strong>Do you have an urgent need for cash for your business, to settle bills, take care of emergencies or grab an opportunity?</strong>
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-content">
+        <img src="https://res.cloudinary.com/creditville-ng/image/upload/v1663147553/about_us_157801a5fb_78fa99cade.png" alt="Kashpay Finance Team" />
+        <div class="cta-text">
+          <h3><span class="brand-highlight">KASHPAY FINANCE</span></h3>
+          <p>Your financial success is our priority. Join thousands of satisfied customers who trust Kashpay Finance for their lending needs. Experience the difference of working with Nigeria's most customer-focused financial institution.</p>
+          <a href="https://mifundlendme.vercel.app/register" class="btn-primary btn-large">
+            <i class="fas fa-arrow-right"></i>
+            Get Started Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>Does payday seem so far and bills are piling up? Don’t worry! Our convenient, secure and instant loans have got you covered. We give loans to businesses and individual entrepreneurs at a small interest rate of 5% per month.</p>
+  <!-- Simplified footer with only linked content -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <i class="fas fa-coins"></i>
+            <span>Kashpay Finance</span>
+          </div>
+          <p>Building financial systems that make life better for everyone. Licensed and regulated financial institution committed to transparency, security, and customer success.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Get Support</h5>
+            <ul>
+              <li><a href="https://wa.me/+2347078184063">WhatsApp Support</a></li>
+              <li><a href="https://mifundlendme.vercel.app/login?session=expired">Login to Account</a></li>
+              <li><a href="https://mifundlendme.vercel.app/register">Apply for Loan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kashpay Finance. All Rights Reserved. Licensed Financial Institution.</p>
+      </div>
+    </div>
+  </footer>
 
-  <p><strong>Apply for a loan now and get the funds within 30 minutes!</strong></p>
-
-  <hr>
-
-</section>
-
-<!-- About Us Section -->
-
-<section id="about" class="about">
-
-  <h3>About Us</h3>
-
-  <p>Get loan, invest smart.<br><br>Since 2019, we have served thousands of users offering world-class financial technology services.<br><br>We are committed to building financial systems that make life better for everyone.</p>
-
-</section>
-
-<!-- Contact Us Section -->
-
-<section id="contact" class="contact">
-
-  <h3>Contact Us</h3>
-
-  <p>Contact is via WhatsApp</p>
-
-  <div class="whatsapp-container">
-
-    <a href="https://wa.me/+2347078184063" class="whatsapp-button" target="_blank">
-
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon"> 
-
-    </a>
-
-    <a href="https://wa.me/+2347078184063" class="whatsapp-link" target="_blank">
-
-      Chat with us on WhatsApp
-
-    </a>
-
-  </div>
-
-</section>
-
-<!-- Second Image -->
-
-<div class="image-container">
-
-  <img src="https://res.cloudinary.com/creditville-ng/image/upload/v1663051737/medium_Screen_Shot_2022_07_08_at_3_05_49_PM_70d2b3a6c9_f1850fbf29.png" alt="Second Image" class="centered">
-
-</div>
-
-<!-- Subheading after Second Image -->
-
-<h3 class="centered">COMPANY WITH THE LOWEST LOAN INTEREST RATE IN NIGERIA</h3>
-
-<!-- Text Body after Subheading -->
-
-<p class="body-text">
-
-  The lending space is fast rising and gradually becoming saturated, which might pose difficulty of choice amongst consumers. Nevertheless, there are several ways of filtering the list to decide which one is best.
-
-  <br><br>
-
-  Before choosing a loan company, there are general evaluation indicators to be considered including - Interest rate, loan tenor, turnaround time, customer service, and transparency. Though, the interest rate is the major factor determinant for customers. The interest rate plays a major role in choice of loan product decision making.
-
-  <br><br>
-
-  Some companies offer the reducing balance rate (interest rate on each remittance) while others offer flat rate. An understanding of these two types of interest rate would further inform an individual’s decision. This is because flat rate and reducing balance rate are not relatively comparable, so an understanding of the difference would go a long way.
-
-  <br><br>
-
-  However, on the long list of lending institutions, Kashpay stands out as the company with the lowest interest rate. Not only do they offer the lowest interest to new customers, but provisions are also made to ensure existing customers enjoy reviewed rate subsequently.
-
-  <br><br>
-
-  This company’s interest rate has been reviewed twice in one year, which is quite impressive and unusual- they’ve outrightly shown their devotion to solving customers dilemma on lending services.
-
-</p>
-
-<!-- Image after Text Body -->
-
-<div class="image-container">
-
-  <img src="https://res.cloudinary.com/creditville-ng/image/upload/v1663147553/about_us_157801a5fb_78fa99cade.png" alt="About Us Image" class="centered">
-
-</div>
-
-<!-- Final Heading -->
-
-<h3 class="centered"><span style="color:red;">KASHPAY</span></h3>
-
-<!-- Footer -->
-
-<footer>
-
-  <p>&copy; 2025 Kashpay Finance. All Rights Reserved.</p>
-
-</footer>
-
-</body>
-
-</html>
-<!-- partial -->
-  
+  <script src="script.js"></script>
 </body>
 </html>
