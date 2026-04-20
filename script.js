@@ -47,25 +47,23 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Header scroll effect
+  // Header scroll effect — shrink + glass on scroll
   const header = document.querySelector(".header")
-  let lastScrollTop = 0
 
   window.addEventListener("scroll", () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-
-    if (scrollTop > 100) {
-      header.style.background = "rgba(30, 64, 175, 0.95)"
-      header.style.backdropFilter = "blur(10px)"
+    if (scrollTop > 80) {
+      header.style.background = "rgba(15,23,42,0.97)"
+      header.style.backdropFilter = "blur(20px)"
+      header.style.padding = "12px 0"
     } else {
-      header.style.background = "linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%)"
-      header.style.backdropFilter = "none"
+      header.style.background = ""
+      header.style.backdropFilter = ""
+      header.style.padding = ""
     }
-
-    lastScrollTop = scrollTop
   })
 
-  // Intersection Observer for animations
+  // Intersection Observer for scroll animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
@@ -81,7 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }, observerOptions)
 
   // Observe elements for animation
-  const animatedElements = document.querySelectorAll(".feature-card, .stat, .testimonial-text, .whatsapp-card")
+  const animatedElements = document.querySelectorAll(
+    ".feature-card, .stat, .testimonial-text, .whatsapp-card, .service-card, .process-step, .faq-item, .hero-image, .img-wrap, .cta-img-wrap"
+  )
   animatedElements.forEach((el) => {
     el.style.opacity = "0"
     el.style.transform = "translateY(30px)"
@@ -107,16 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       button.style.transform = "translateY(0)"
     })
   })
-
-  // Parallax effect for hero section
-  const hero = document.querySelector(".hero")
-  if (hero) {
-    window.addEventListener("scroll", () => {
-      const scrolled = window.pageYOffset
-      const rate = scrolled * -0.5
-      hero.style.transform = `translateY(${rate}px)`
-    })
-  }
 
   // Loading animation
   window.addEventListener("load", () => {
